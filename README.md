@@ -1,2 +1,0 @@
-# -Un-known
-Competiton Project
