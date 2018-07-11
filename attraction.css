@@ -5,17 +5,17 @@
 }
 
 body {
-	color: white;
-	background-color: #232323;
-	font-family: Arial;
-	background-image: url('./Images/towerbridgebw.jpeg');
-	background-size: 100% 100%;
+    color: white;
+    background-color: #232323;
+    font-family: 'Montserrat', sans-serif;
+    background-image: url('./Images/map.jpg');
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
 h2 {
-	text-align: center;
-	font-size: 50px;
+    text-align: center;
+    font-size: 50px;
 }
 
 .center {
@@ -28,7 +28,7 @@ h2 {
 }
 
 #place-info {
-	display: block;
+    display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
@@ -36,13 +36,13 @@ h2 {
 }
 
 input {
-	width: 200px;
-	height: 30px;
+    width: 200px;
+    height: 30px;
 }
 
 textarea {
-	width: 300px;
-	height: 200px;
+    width: 300px;
+    height: 200px;
 }
 
 button {
@@ -57,10 +57,10 @@ button:hover {
 }
 
 #person-icon {
-	width: 60px;
-	height: 60px;
-	border-radius: 50%;
-	border: white solid 2px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: white solid 2px;
 }
 
 #people-comments {
@@ -69,24 +69,29 @@ button:hover {
 }
 
 #comment-box {
-	text-align: center;
+    text-align: center;
     position: center;
 }
 
 td {
-	padding-bottom: 80px;
+    padding-bottom: 80px;
 }
 
 nav {
+    float: none;
+    position: relative;
     width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+
+.navbar-brand{
+    padding-top: 30px;
 }
 
 .container-fluid {
     position: relative;
     margin: 0px 150px 0px 150px;
-}
-.navbar-brand{
-    padding-top: 30px;
 }
 
 .icon img {
