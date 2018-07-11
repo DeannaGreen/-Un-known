@@ -71,9 +71,9 @@ p {
 }
 
 body {
-    background-size: 100% 100%;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(./Images/towerbridgebw.jpeg);
+    background-image: url(./Images/map.jpg);
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -83,15 +83,20 @@ body {
 }
 
 nav {
+    float: none;
+    position: relative;
     width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+
+.navbar-brand{
+    padding-top: 30px;
 }
 
 .container-fluid {
     position: relative;
     margin: 0px 150px 0px 150px;
-}
-.navbar-brand{
-    padding-top: 30px;
 }
 
 .icon img {
