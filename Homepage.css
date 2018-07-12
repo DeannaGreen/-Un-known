@@ -1,0 +1,86 @@
+body {
+	background: url(UnKnownPics/atlas-close-up-dark-592753v3.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+}
+
+.UnknownTitle {
+	display: table;
+	height: 400px;
+	width: 100%;
+	line-height: 2.5;
+	background: rgba(0,0,0,0.75);
+	opacity: 1;
+	animation-name: fadeIn;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-out;
+	animation-duration: 3s;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.UnknownTitle h1 {
+	vertical-align: middle;
+	font-size: 75px;
+	padding-top: 100px;
+}
+
+nav {
+	width: 100%;
+}
+.container-fluid {
+	position: relative;
+	margin: 0px 150px 0px 150px;
+}
+.navbar-brand{
+	padding-top: 30px;
+}
+
+.LondonCarousel {
+	margin-top: 75px;
+	height: 400px;
+	width: 100%;
+	background: rgba(0,0,0,0.5);
+}
+
+.Signup {
+	margin-top: 100px;
+	height: 400px;
+	width: 100%;
+	background: rgba(0,0,0,0.5);
+}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+      width: 575px;
+      margin: auto;
+      float: middle;
+      padding: 40px;
+  }
+
+.active img{
+  	height: 30px;
+  	width: 30px;
+  }
+
+.icon img {
+  	height: 20px;
+  	width: 20px;	
+}
+.Signup button {
+	border-radius: 12px;
+	color: gray;
+}
+.Signup input{
+	border-radius: 12px;
+}
