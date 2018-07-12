@@ -8,9 +8,9 @@ body {
     color: white;
     background-color: #232323;
     font-family: 'Montserrat', sans-serif;
-    background-image: url('./Images/city.jpg');
+    background: url(./Images/city.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 h2 {
