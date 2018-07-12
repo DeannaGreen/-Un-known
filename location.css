@@ -71,7 +71,7 @@ p {
 }
 
 body {
-    background: url(./Images/map.jpg);
+    background: url(./map.jpg);
     background-size: cover;
     background-attachment: fixed;
     font-family: 'Montserrat', sans-serif;
