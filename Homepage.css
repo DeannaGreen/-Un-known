@@ -1,25 +1,39 @@
 body {
-	background: url(./map.jpg);
+	background: url(.Images/atlas-close-up-dark-592753v3.jpg);
 	background-size: cover;
 	background-attachment: fixed;
 	color: white;
 	font-family: 'Montserrat', sans-serif;
 	text-align: center;
 }
-
-.UnknownTitle {
-	display: table;
-	height: 400px;
+.UnKnownTitle {
+    height: 600px;
+    width: 100px;
+    font-size: 40px;
+    color: black;
+    display: block;
+	height: 450px;
 	width: 100%;
-	line-height: 2.5;
 	background: rgba(0,0,0,0.75);
 	opacity: 1;
 	animation-name: fadeIn;
 	animation-iteration-count: 1;
 	animation-timing-function: ease-out;
 	animation-duration: 3s;
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	margin-top: 125px;
+	padding-top: 50px;
 }
 
+.UnKnownTitle h1{
+	font-size: 80px;
+}
+
+.UnKnownTitle h4 {
+	line-height: 2.5;
+}
 @keyframes fadeIn {
 	0% {
 		opacity: 0;
@@ -28,26 +42,36 @@ body {
 		opacity: 1;
 	}
 }
+.new {
+    opacity: 0;
+}
 
-.UnknownTitle h1 {
-	vertical-align: middle;
-	font-size: 75px;
-	padding-top: 100px;
+.old, .new {
+    transition: opacity 0.5s linear;
+}
+
+.UnKnownTitle:hover .old {
+    opacity: 0;
+}
+.UnKnownTitle:hover .new {
+    opacity: 1;
 }
 
 nav {
-	width: 100%;
-}
-.container-fluid {
+	float: none;
 	position: relative;
-	margin: 0px 150px 0px 150px;
+	width: 100%;
+	display: block;
+	text-align: center;
 }
+
 .navbar-brand{
 	padding-top: 30px;
 }
 
+
 .LondonCarousel {
-	margin-top: 75px;
+	margin-top: 100px;
 	height: 400px;
 	width: 100%;
 	background: rgba(0,0,0,0.5);
@@ -58,6 +82,8 @@ nav {
 	height: 400px;
 	width: 100%;
 	background: rgba(0,0,0,0.5);
+	margin-bottom: 100px;
+
 }
 
 .carousel-inner > .item > img,
@@ -74,13 +100,59 @@ nav {
   }
 
 .icon img {
-  	height: 20px;
-  	width: 20px;	
+  	height: 30px;
+  	width: 30px;	
 }
-.Signup button {
-	border-radius: 12px;
-	color: gray;
+
+.icon img:hover {
+	animation-name: rotation;
+  	animation-iteration-count: infinite;
+  	animation-timing-function: linear;
+  	animation-duration: 2.5s;
 }
-.Signup input{
-	border-radius: 12px;
+
+@keyframes rotation {
+  0% {
+    transform: rotate3d(0, 1, 0, 0deg);
+  }
+  50% {
+    transform: rotate3d(0, 1, 0, 180deg);
+  }
+  100% {
+    transform: rotate3d(0, 1, 0, 360deg);
+  }
+}
+.Signup_Button {
+	height: 150px;
+	width: 100%;
+	background: rgba(255,255,255,0.20);
+	position: relative;
+	padding-top: 50px;
+	border-radius: 20px;
+}
+
+
+.Signup_Button button{
+	background: #999;
+	color: white;
+	border-radius: 10px;
+	border: 10px solid #999;
+	position:relative;
+	font-size: 20px;
+}
+
+.btn_SignUp {
+	margin-right: 75px;
+}
+
+.row {
+	padding-top: 60px;
+}
+.LondonCab {
+	padding-top: 50px;
+}
+.abs-center-x {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
