@@ -86,10 +86,8 @@ nav {
     float: none;
     position: relative;
     width: 100%;
-    display: block;
+    display: inline-block;
     text-align: center;
-    font-size: 12px;
-    padding-left: 20%;
 }
 
 .navbar-brand{
@@ -188,12 +186,40 @@ nav {
     .modal-content {
         width: 100%;
     }
+}
+
+
+
+
+nav {
+    float: none;
+    position: relative;
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    padding-left: 20%;
+}
+
+.navbar-brand{
+    padding-top: 30px;
+}
+
+.active img{
+    height: 30px;
+    width: 30px;
+  }
+
+.icon img {
+    height: 30px;
+    width: 30px;    
+}
 
 .icon img:hover {
-	animation-name: rotation;
-  	animation-iteration-count: infinite;
-  	animation-timing-function: linear;
-  	animation-duration: 2.5s;
+    animation-name: rotation;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 2.5s;
 }
 
 @keyframes rotation {
@@ -208,20 +234,8 @@ nav {
   }
 }
 
-#section03 {
-	margin-top: 100px;
-	height: 500px;
-	width: 100%;
-	background: rgba(0,0,0,0.5);
-	padding-top: 30px;
-}
-
-.row {
-	padding-top: 10px;
-
-}
 .LondonCab {
-	padding-top: 50px;
+    padding-top: 50px;
 }
 .abs-center-x {
     position: absolute;
