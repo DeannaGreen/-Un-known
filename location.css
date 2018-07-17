@@ -189,21 +189,11 @@ nav {
         width: 100%;
     }
 
-.active img{
-    height: 30px;
-    width: 30px;
-  }
-
-.icon img {
-    height: 30px;
-    width: 30px;    
-}
-
 .icon img:hover {
-    animation-name: rotation;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    animation-duration: 2.5s;
+	animation-name: rotation;
+  	animation-iteration-count: infinite;
+  	animation-timing-function: linear;
+  	animation-duration: 2.5s;
 }
 
 @keyframes rotation {
@@ -219,19 +209,19 @@ nav {
 }
 
 #section03 {
-    margin-top: 100px;
-    height: 500px;
-    width: 100%;
-    background: rgba(0,0,0,0.5);
-    padding-top: 30px;
+	margin-top: 100px;
+	height: 500px;
+	width: 100%;
+	background: rgba(0,0,0,0.5);
+	padding-top: 30px;
 }
 
 .row {
-    padding-top: 10px;
+	padding-top: 10px;
 
 }
 .LondonCab {
-    padding-top: 50px;
+	padding-top: 50px;
 }
 .abs-center-x {
     position: absolute;
