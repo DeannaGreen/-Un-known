@@ -191,7 +191,6 @@ body {
 .icon img {
     height: 30px;
     width: 30px;  
-    align:center:
 }
 
 .icon img:hover {
@@ -221,3 +220,7 @@ body {
     left: 50%;
     transform: translateX(-50%);
 } 
+
+nav {
+	text-align: center;
+}
