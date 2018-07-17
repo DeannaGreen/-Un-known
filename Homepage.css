@@ -59,11 +59,11 @@ body {
 
 .navbar-brand{
 	padding-top: 30px;
-	margin-left: 100px;
 }
 
 nav {
     text-align: center;
+	margin-left:100px;
 } 
 
 .LondonCarousel {
