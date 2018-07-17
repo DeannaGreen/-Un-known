@@ -1,7 +1,7 @@
 <DOCTYPE! html>
 <html>
 <head>
-  <link href="bootsrap_exercise-master/dist/css/bootstrap.css"rel="stylesheet">
+
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -11,7 +11,11 @@
 	<title>(Un)Known - Tower Bridge</title>
 </head>
 <body>
-
+  <div id="myModal" class="modal">
+    <span class="close" data-dismiss="modal">&times;</span>
+    <img class="modal-content" src="./Images/towerbridge.jpg" id="img01">
+    <div id="caption"></div>
+  </div>
   
 
   <nav class="navbar navbar-inverse navbar fixed-top">
@@ -42,12 +46,8 @@
 	<div class='polaroid-images'>
     <div class="row">
       <div class="col-md-4 col-sm-12">
-        <a href="#" title="Tower Bridge"><img id="myImg" src="./Images/towerbridge.jpg" alt="Snow" style="width:100%;max-width:300px"></a>
-        <div id="myModal" class="modal">
-          <span class="close">&times;</span>
-          <img class="modal-content" id="img01">
-          <div id="caption"></div>
-        </div>
+        <a  href="#myModal" title="Tower Bridge" data-toggle="modal" ><img id="myImg" src="./Images/towerbridge.jpg" alt="Snow" style="width:100%;max-width:300px"></a>
+
       </div>
       <div class="col-md-6 col-sm-12">
         <h2>Place Name</h2>
@@ -125,6 +125,6 @@
   </div>
   
 
-  <script type="text/javascript" src="script.js"></script>
+  
 </body>
 </html>
