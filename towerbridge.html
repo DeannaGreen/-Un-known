@@ -4,13 +4,21 @@
   <link href="bootsrap_exercise-master/dist/css/bootstrap.css"rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="./location.css">
 	<title>(Un)Known - Tower Bridge</title>
 </head>
 <body>
+
+  
+
   <nav class="navbar navbar-inverse navbar fixed-top">
     <div class="container-fluid">
+
+
+
       <div class="navbar-header">
         <a class="navbar-brand" href="#">(Un)Known</a>
       </div>
@@ -31,10 +39,15 @@
     <h2>All these locations are within 1 mile of London Bridge</h2>
   </div>
   <br></br>
-  <div class='polaroid-images'>
+	<div class='polaroid-images'>
     <div class="row">
       <div class="col-md-4 col-sm-12">
-        <a href="./attraction.html" title="Tower Bridge"><img height="200" src='./Images/towerbridge.jpg' alt="Tower Bridge" title="Tower Bridge" /></a></td>
+        <a href="#" title="Tower Bridge"><img id="myImg" src="./Images/towerbridge.jpg" alt="Snow" style="width:100%;max-width:300px"></a>
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
+        </div>
       </div>
       <div class="col-md-6 col-sm-12">
         <h2>Place Name</h2>
@@ -53,7 +66,27 @@
   <div class='polaroid-images'>
     <div class="row">
       <div class="col-md-4 col-sm-12">
-        <a href="./attraction.html" title="Tower Bridge"><img height="200" src='./Images/towerbridge.jpg' alt="Tower Bridge" title="Tower Bridge" /></a></td>
+        <a href="#myModal" title="Tower Bridge" data-toggle="modal" ><img height="200" src='./Images/towerbridge.jpg' alt="Tower Bridge" title="Tower Bridge" /></a>
+      </div>
+
+      <div class="col-md-6 col-sm-12">
+        <h2>Place Name</h2>
+        <h3>Distance from Tower Bridge</h3>
+        <div class="stars">
+          <img src="./Images/star.png">
+          <img src="./Images/star.png">
+          <img src="./Images/star.png">
+          <p>(67 Reviews)</p>
+        </div>
+        <p>Brief description of the place
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et mauris sit amet tortor congue porttitor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque consectetur molestie laoreet. Integer ac orci eros. Curabitur hendrerit dapibus orci at convallis.</p>
+      </div>
+    </div>
+  </div>
+  <div class='polaroid-images'>
+    <div class="row">
+      <div class="col-md-4 col-sm-12">
+        <a href="#" title="Tower Bridge"><img height="200" src='./Images/towerbridge.jpg' alt="Tower Bridge" title="Tower Bridge" /></a></td>
       </div>
       <div class="col-md-6 col-sm-12">
         <h2>Place Name</h2>
@@ -72,7 +105,7 @@
   <div class='polaroid-images'>
     <div class="row">
       <div class="col-md-4 col-sm-12">
-        <a href="./attraction.html" title="Tower Bridge"><img height="200" src='./Images/towerbridge.jpg' alt="Tower Bridge" title="Tower Bridge" /></a></td>
+        <a href="#" title="Tower Bridge"><img height="200" src='./Images/towerbridge.jpg' alt="Tower Bridge" title="Tower Bridge" /></a></td>
       </div>
       <div class="col-md-6 col-sm-12">
         <h2>Place Name</h2>
@@ -88,25 +121,10 @@
       </div>
     </div>
   </div>
-  <div class='polaroid-images'>
-    <div class="row">
-      <div class="col-md-4 col-sm-12">
-        <a href="./attraction.html" title="Tower Bridge"><img height="200" src='./Images/towerbridge.jpg' alt="Tower Bridge" title="Tower Bridge" /></a></td>
-      </div>
-      <div class="col-md-6 col-sm-12">
-        <h2>Place Name</h2>
-        <h3>Distance from Tower Bridge</h3>
-        <div class="stars">
-          <img src="./Images/star.png">
-          <img src="./Images/star.png">
-          <img src="./Images/star.png">
-          <p>(67 Reviews)</p>
-        </div>
-        <p>Brief description of the place
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et mauris sit amet tortor congue porttitor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque consectetur molestie laoreet. Integer ac orci eros. Curabitur hendrerit dapibus orci at convallis.</p>
-      </div>
-    </div>
+
   </div>
-	</div>
+  
+
+  <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
