@@ -179,16 +179,6 @@ body {
 
 
 
-nav {
-    float: none;
-    position: relative;
-    width: 100%;
-    display: block;
-    text-align: center;
-    font-size: 12px;
-    padding-left: 20%;
-}
-
 .navbar-brand{
     padding-top: 30px;
 }
@@ -229,4 +219,4 @@ nav {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-}
+} 
