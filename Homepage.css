@@ -335,5 +335,5 @@ label {
 
 .container-fluid {
     position: relative;
-    margin: 0px 0px 0px 100px;
+    margin-left: 100px;
 }
