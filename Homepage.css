@@ -57,13 +57,20 @@ body {
     opacity: 1;
 }
 
+nav {
+	float: none;
+	position: relative;
+	width: 100%;
+	display: block;
+	text-align: center;
+	font-size: 12px;
+	padding-left: 20%;
+}
+
 .navbar-brand{
 	padding-top: 30px;
 }
 
-nav {
-    text-align: center;
-} 
 
 .LondonCarousel {
 	margin-top: 100px;
