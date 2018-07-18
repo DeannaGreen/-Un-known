@@ -59,9 +59,15 @@ body {
 
 .navbar-brand{
 	padding-top: 30px;
-	padding-left: 50px;
 }
 
+.nav {
+    padding-left: 100px;
+}
+
+navbar-header {
+	padding-left: 100px;
+}
 
 .LondonCarousel {
 	margin-top: 100px;
