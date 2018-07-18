@@ -333,7 +333,7 @@ label {
   background-color: #4F2F4F;
 }
 
-.container-fluid {
+.mx-auto {
     position: relative;
     margin-left: 100px;
 }
