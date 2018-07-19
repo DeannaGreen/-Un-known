@@ -1,10 +1,10 @@
 body {
-	background: url(map_purple.jpg);
-	background-size: cover;
-	background-attachment: fixed;
-	color: white;
-	font-family: 'Montserrat', sans-serif;
-	text-align: center;
+  background: url(map_purple.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
 }
 .UnKnownTitle {
     height: 600px;
@@ -12,35 +12,35 @@ body {
     font-size: 40px;
     color: black;
     display: block;
-	height: 450px;
-	width: 100%;
-	background: rgba(0,0,0,0.75);
-	opacity: 1;
-	animation-name: fadeIn;
-	animation-iteration-count: 1;
-	animation-timing-function: ease-out;
-	animation-duration: 3s;
-	color: white;
-	font-family: 'Montserrat', sans-serif;
-	text-align: center;
-	margin-top: 125px;
-	padding-top: 50px;
+  height: 450px;
+  width: 100%;
+  background: rgba(0,0,0,0.75);
+  opacity: 1;
+  animation-name: fadeIn;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+  animation-duration: 3s;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  margin-top: 125px;
+  padding-top: 50px;
 }
 
 .UnKnownTitle h1{
-	font-size: 70px;
+  font-size: 70px;
 }
 
 .UnKnownTitle h4 {
-	line-height: 2.5;
+  line-height: 2.5;
 }
 @keyframes fadeIn {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .new {
     opacity: 0;
@@ -57,36 +57,18 @@ body {
     opacity: 1;
 }
 
-.navbar-brand{
-	padding-top: 30px;
-	padding-left: 100px;
-}
-
-.nav {
-    padding-left: 100px;
-}
-
-.container-fluid {
-    position: relative;
-    margin: 0px 150px 0px 150px;
-}
-
-navbar-header {
-	padding-left: 100px;
-}
-
 .LondonCarousel {
-	margin-top: 100px;
-	height: 400px;
-	width: 100%;
-	background: rgba(0,0,0,0.5);
+  margin-top: 100px;
+  height: 400px;
+  width: 100%;
+  background: rgba(0,0,0,0.5);
 }
 
 /*.Signup {
-	padding-top: 50px;
-	height: 400px;
-	width: 100%;
-	background: rgba(0,0,0,0.5);
+  padding-top: 50px;
+  height: 400px;
+  width: 100%;
+  background: rgba(0,0,0,0.5);
 }*/
 
 .carousel-inner > .item > img,
@@ -97,68 +79,31 @@ navbar-header {
       padding: 40px;
   }
 
-.active img{
-  	height: 30px;
-  	width: 30px;
-  }
-
-.icon img {
-  	height: 30px;
-  	width: 30px;	
-}
-
-.icon img:hover {
-	animation-name: rotation;
-  	animation-iteration-count: infinite;
-  	animation-timing-function: linear;
-  	animation-duration: 2.5s;
-}
-
-@keyframes rotation {
-  0% {
-    transform: rotate3d(0, 1, 0, 0deg);
-  }
-  50% {
-    transform: rotate3d(0, 1, 0, 180deg);
-  }
-  100% {
-    transform: rotate3d(0, 1, 0, 360deg);
-  }
-}
-
 #section03 {
-	margin-top: 100px;
-	height: 500px;
-	width: 100%;
-	background: rgba(0,0,0,0.5);
-	padding-top: 30px;
+  margin-top: 100px;
+  height: 500px;
+  width: 100%;
+  background: rgba(0,0,0,0.5);
+  padding-top: 30px;
 }
 
 .row {
-	padding-top: 10px;
+  padding-top: 10px;
 
-}
-.LondonCab {
-	padding-top: 50px;
-}
-.abs-center-x {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
 }
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,100,700,500);
 
 #section03 {
-	padding-top: 30px;
-	color:#666666;
-	font-family: 'Roboto', sans-serif;
-	font-weight:100;
-	margin-top: 100px;
-	margin-bottom: 100px;
-	height: 575px;
-	width: 100%;
-	background: rgba(0,0,0,0.5);
+  padding-top: 30px;
+  color:#666666;
+  font-family: 'Roboto', sans-serif;
+  font-weight:100;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  height: 575px;
+  width: 100%;
+  background: rgba(0,0,0,0.5);
 }
 .margin{
     height: 400px;
@@ -344,4 +289,57 @@ label {
 .btn-register:focus {
   color: #fff;
   background-color: #4F2F4F;
+}
+
+
+
+.navbar-brand{
+    padding-top: 30px;
+}
+
+.active img{
+    height: 30px;
+    width: 30px;
+  }
+
+.icon img {
+    height: 30px;
+    width: 30px;  
+}
+
+.icon img:hover {
+    animation-name: rotation;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 2.5s;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate3d(0, 1, 0, 0deg);
+  }
+  50% {
+    transform: rotate3d(0, 1, 0, 180deg);
+  }
+  100% {
+    transform: rotate3d(0, 1, 0, 360deg);
+  }
+}
+
+.LondonCab {
+    padding-top: 50px;
+}
+.abs-center-x {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+} 
+
+nav {
+    text-align: center;
+} 
+
+.container-fluid {
+    position: relative;
+    margin: 0px 150px 0px 150px;
 }
