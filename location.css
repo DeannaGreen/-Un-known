@@ -69,7 +69,11 @@ p {
     font-size: 18px;
     color: white;
 }
-
+ul {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: white;
+}
 body {
     background: url(city_purple.jpg);
     background-size: cover;
