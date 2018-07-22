@@ -43,6 +43,6 @@ def read_form_data():
 	location_chosen = location_selector[location_number] #chooses from the location array user selected and random number that place
 	return render_template ("showmylocationchosen.html",location_chosen=location_chosen)
 
-
+app.run(debug=True)
 
 	
