@@ -342,3 +342,14 @@ nav {
     position: relative;
     margin: 0px 150px 0px 150px;
 }
+
+#loginwelcome {
+  margin-top: 100px;
+  height: 500px;
+  width: 100%;
+  background: rgba(0,0,0,0.5);
+  padding-top: 30px;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
