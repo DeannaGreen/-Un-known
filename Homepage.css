@@ -353,3 +353,13 @@ nav {
   font-family: 'Montserrat', sans-serif;
   text-align: center;
 }
+
+#locationsubmit {
+  color: grey;
+  border-radius: 10px;
+}
+
+#locationinput {
+  color: grey;
+  border-radius: 10px;
+}
