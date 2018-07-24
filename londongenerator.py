@@ -1,5 +1,8 @@
 from flask import Flask , render_template,request
 import random
+import requests
+from sendemailapi import send_simple_message
+
 #This is create instance of Flask. app is variable
 app = Flask("MyApp")
 
@@ -27,11 +30,28 @@ def random_location_generator(location_selector):
 	return location_chosen
 
 @app.route('/locgame', methods=['POST'])
-def read_form_data():
+def read_location_data():
 	form_data = request.form #Getting hold of a Form object that is sent from a browser.
 	location_selector = form_data["loc_list"]
 	print location_selector + " ALL WORKED" # from the form object getting the location input
 	location_chosen= random_location_generator(location_selector) #Takes location and returns random number
 	return render_template ("showlocationchosen.html",location_chosen=location_chosen)
+
+@app.route("/signup")
+def signup():
+	return render_template ("signup.html") 
+
+@app.route("/send", methods=["POST"])
+def read_signup_data():
+	form_data = request.form #Getting hold of a Form object that is sent from a browser.
+	name =  form_data["username"] # from the form object get the Username
+	emailto =  form_data["email"] # from the form object get the email
+	
+	emailtext = "Hello " + name + "Welcome to the (Un)Known"
+
+	send_simple_message(emailto, emailtext)
+
+	return render_template ("emailsent.html")
+
 app.run(debug=True)
 
