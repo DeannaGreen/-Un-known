@@ -98,21 +98,12 @@
     <div id="locationgame" >
       <form method="post" action="/locgame"> <!-- need to add link to location game when submit is clicked on -->
         <p>Choose a location from the above:</p></br>
-<!--         <select name="loc_list" id="loc_list">
-          <option value="SouthBank">South Bank</option>
-          <option value="HydePark">Hyde Park</option>
-          <option value="TowerBridge">Tower Bridge</option>
-          <option value="LeicesterSquare">Leicester Square</option>
-          <option value="CanaryWharf">Canary Wharf</option>
-          <option value="Rooftop">Rooftop</option>
-        </select> -->
 		<select name="loc_list" id="loc_list">
 		  <option value="{{Knownplaces[0]}}" selected>{{Knownplaces[0]}}</option>
 		  {% for place in Knownplaces[1:] %}
 		    <option value="{{place}}">{{place}}</option>
 		  {% endfor %}
 		</select>
-<!--         <input type="text" id="locationinput" name="locationinput" required="required"> -->
         <input type="submit" value="Submit" id="locationsubmit">
       </form>
     </div>
