@@ -4,14 +4,17 @@
 <head>
   <link href="bootsrap_exercise-master/dist/css/bootstrap.css"rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-	<link href="Homepage.css" rel="stylesheet"">
+  <link href="{{ url_for('static', filename='Homepage.css') }}" rel="stylesheet"">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   	
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
 <!-- <link rel="stylesheet" type="text/css" href="./location.css"> -->
 
 	<title>(Un)Known</title>
@@ -24,14 +27,14 @@
       </div >
       <ul class="nav navbar-nav">
 <!--        <li class="active"><a href="index.html"><img src="UnKnownPics/icons8-london-cab-64.png"><br>Home</a></li> -->
-        <li class="icon"><a href="londoneye.html"><img src="./Images/london-eye (1).png"><br>South Bank</a></li>
-        <li class="icon"><a href="towerbridge.html"><img src="./Images/icons8-bridge-40.png"><br>Tower Bridge</a></li>
-        <li class="icon"><a href="hydepark.html"><img src="./Images/icons8-lettuce-48-2.png"><br>Hyde Park</a></li>
-        <li class="icon"><a href="canarywharf.html"><img src="./Images/icons8-city-100.png"><br>Canary Wharf</a></li>
-        <li class="icon"><a href="soho.html"><img src="./Images/icons8-musical-notes-32.png"><br>Leicester Square</a></li>
-        <li class="icon"><a href="rooftops.html"><img src="./Images/icons8-cocktail-50.png"><br>Rooftops</a></li>
-        <li class="icon"><a href="./API/templates/signup.html"><img src="./Images/icons8-sign-up-50.png"><br>Sign Up</a></li>
-        <li class="icon"><a href="index.html"><img src="./Images/exitdoor.png"><br>Log Out</a></li>
+        <li class="icon"><a href="../../londoneye.html"><img src="../Images/london-eye (1).png"><br>South Bank</a></li>
+        <li class="icon"><a href="../../towerbridge.html"><img src="../Images/icons8-bridge-40.png"><br>Tower Bridge</a></li>
+        <li class="icon"><a href="../../hydepark.html"><img src="../Images/icons8-lettuce-48-2.png"><br>Hyde Park</a></li>
+        <li class="icon"><a href="../../canarywharf.html"><img src="../../Images/icons8-city-100.png"><br>Canary Wharf</a></li>
+        <li class="icon"><a href="../../soho.html"><img src="../../Images/icons8-musical-notes-32.png"><br>Leicester Square</a></li>
+        <li class="icon"><a href="../../rooftops.html"><img src="../../Images/icons8-cocktail-50.png"><br>Rooftops</a></li>
+        <li class="icon"><a href="./API/templates/signup.html"><img src="../../Images/icons8-sign-up-50.png"><br>Sign Up</a></li>
+        <li class="icon"><a href="../../index.html"><img src="../../Images/exitdoor.png"><br>Log Out</a></li>
       </ul>
     </div>
   </nav>
@@ -94,10 +97,23 @@
     <p>Go Crazy and try out our random location selector below</p></br>
     <div id="locationgame" >
       <form method="post" action="/locgame"> <!-- need to add link to location game when submit is clicked on -->
-        <p>Locations: South Bank, Hyde Park, Tower Bridge, Canary Wharf, Leicester Square, Rooftops:</p></br>
-        <label for="text">Choose a location from the above:</label></form><br>
-        <input type="text" id="locationinput" name="londonlocation" required="required">
-        <input type="submit" value="Submit" id="locationsubmit"/>
+        <p>Choose a location from the above:</p></br>
+<!--         <select name="loc_list" id="loc_list">
+          <option value="SouthBank">South Bank</option>
+          <option value="HydePark">Hyde Park</option>
+          <option value="TowerBridge">Tower Bridge</option>
+          <option value="LeicesterSquare">Leicester Square</option>
+          <option value="CanaryWharf">Canary Wharf</option>
+          <option value="Rooftop">Rooftop</option>
+        </select> -->
+		<select name="loc_list" id="loc_list">
+		  <option value="{{Knownplaces[0]}}" selected>{{Knownplaces[0]}}</option>
+		  {% for place in Knownplaces[1:] %}
+		    <option value="{{place}}">{{place}}</option>
+		  {% endfor %}
+		</select>
+<!--         <input type="text" id="locationinput" name="locationinput" required="required"> -->
+        <input type="submit" value="Submit" id="locationsubmit">
       </form>
     </div>
   </div>
